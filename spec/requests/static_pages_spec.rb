@@ -1,5 +1,7 @@
 require 'spec_helper'
 
+# run: bundle exec rspec spec/requests/static_pages_spec.rb
+
 describe "Static pages" do
 
   describe "Home page" do
