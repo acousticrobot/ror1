@@ -39,6 +39,9 @@ module Ror1
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # Default after Rails 3.2.3, makes sure error thrown on invalid mass assignment
+    config.active_record.whitelist_attributes = true
+
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
